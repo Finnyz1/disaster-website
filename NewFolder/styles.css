@@ -1,0 +1,455 @@
+/* GENERAL STYLES */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px;
+    background-color: white; 
+}
+
+/* Left section - Logo & Name */
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.site-name {
+  font-size: 22px;
+  color: #0073ff;
+  margin: 0;
+}
+
+/* Center section - Phone Number */
+.center-section {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.phone-number {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #666;
+}
+
+/* Right section - Availability & Button */
+.right-section {
+  text-align: right;
+}
+
+.availability {
+  font-size: 14px;
+  color: #0073ff;
+  margin-right: 15px; 
+}
+
+.cta-button {
+  background: #6c6575;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 0;
+  
+}
+.cta-button:hover {
+  background-color: #463d3d;
+}
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: center;  
+  align-items: center;  
+  background-color: #3b77e7; 
+  padding: 4px 0;  
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  background-color: #3b77e7;
+}
+
+nav ul li {
+  position: relative;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: block;
+}
+
+nav ul li .dropdown-menu {
+  display: none;
+  position: absolute;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  min-width: 200px;
+  z-index: 1000;
+}
+
+nav ul li .dropdown-menu li {
+  padding: 10px;
+}
+
+nav ul li .dropdown-menu li a {
+  color: black;
+  padding: 10px 15px;
+  display: block;
+}
+
+nav ul li:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+/* DROPDOWN MENU */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  top: 35px;
+  left: 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  text-align: left;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* SHOW DROPDOWN */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+}
+
+/* FIXED: Added Spacing & Arrow Rotation */
+.dropdown a {
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  font-size: 12px;
+  margin-left: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Rotate Arrow on Hover */
+.dropdown:hover .arrow {
+  transform: rotate(180deg);
+}
+
+/* HOVER EFFECT ON DROPDOWN ITEMS */
+.dropdown-menu li {
+  transition: background 0.3s ease-in-out;
+}
+
+.dropdown-menu li a {
+  padding: 12px 15px;
+  display: block;
+  color: black;
+}
+
+
+.dropdown-menu li:hover {
+  background: #e0e0e0;
+}
+
+
+/* GENERAL STYLES */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('background.jpg') no-repeat center center/cover;
+    padding: 80px;
+    height: 100vh;
+}
+
+/* TEXT CONTENT */
+.hero-content {
+    max-width: 50%;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.hero-content span {
+    color: #ffffff;
+}
+
+.hero-content p {
+    font-size: 16px;
+}
+
+/* Form Container */
+.form-container {
+    background-color: #007bff; /* Blue background */
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px; 
+    max-width: 90%;
+    margin: auto
+}
+
+/* Input Fields */
+.form-container input,
+.form-container textarea {
+    width: 100%; 
+    padding: 12px;
+    margin: 10px 0; 
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: white;
+    outline: none;
+}
+
+
+.form-container textarea {
+    resize: none; 
+    height: 100px;
+}
+
+/* Submit Button */
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5a4e4e;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #463d3d;
+}
+
+
+/* Show dropdown when hovering over the parent */
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+.navbar .dropdown-menu a {
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+/* Add hover effect */
+.navbar .dropdown-menu a:hover {
+  background-color: #e0e0e0;
+}
+
+
+
+
+
+
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(pictures/1-FIRST\ AID\ KIT.webp);
+  padding: 80px;
+  height: 100vh;
+}
+
+/* TEXT CONTENT */
+.hero-content {
+  max-width: 50%;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.hero-content span {
+  color: #ffffff;
+}
+
+.hero-content p {
+  font-size: 16px;
+}
+
+/* FORM CONTAINER */
+.contact-form {
+  background-color: #3a75cc;
+    padding: 40px;
+    border-radius: 10px;
+    width: 380px; 
+    max-width: 90%;
+    margin: auto; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding-inline-start: 10px;
+    height: 380px;
+    
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%; /* Full width */
+  padding: 12px;
+  margin: 10px 0; /* Space between fields */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background: white;
+  outline: none;
+  
+}
+
+.contact-form  textarea {
+  resize: none; /* Prevent resizing */
+  height: 100px;
+}
+.contact-form button {
+  width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5a4e4e;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contact-form  button:hover {
+  background-color: #463d3d;
+}
+
+
+/* Knowledge section */
+
+/* Section Container */
+.knowledge-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Headings */
+.knowledge-content h3 {
+  color: #1e73be;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.knowledge-content h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.knowledge-content p {
+  font-size: 18px;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+/* Grid Layout */
+.knowledge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Each Item */
+.knowledge-item {
+  background: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Image Styling */
+.knowledge-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Heading & Text */
+.knowledge-item h3 {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.knowledge-item p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* Hover Effect */
+.knowledge-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive for Small Screens */
+@media (max-width: 768px) {
+  .knowledge-grid {
+    grid-template-columns: 1fr; /* Stack items in one column */
+  }
+
+  .knowledge-item img {
+    height: 160px;
+  }
+
+  .knowledge-content h2 {
+    font-size: 26px;
+  }
+}
