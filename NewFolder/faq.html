@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | DisasterShield</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  /* FAQ Page Styling */
+.faq-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-container h2 {
+    text-align: center;
+    color: #d32f2f;
+    font-size: 28px;
+}
+
+.faq-section {
+    margin: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+    width: 100%;
+    background: #f4f4f4;
+    color: #333;
+    font-size: 18px;
+    padding: 15px;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-question:hover {
+    background: #ddd;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    font-size: 16px;
+    background: #f9f9f9;
+}
+
+.arrow5 {
+    font-weight: bold;
+    color: #777;
+}
+
+</style>
+<body>
+  <!-- HEADER SECTION -->
+  <header class="header">
+    <div class="left-section">
+        <img src="pictures/Disaster Shield logo.png" alt="DisasterShield Logo" class="logo">
+        <h1 class="site-name">DisasterShield</h1>
+    </div>
+
+    <div class="center-section">
+        <a href="tel:5555551234" class="phone-number">(555) 555-1234</a>
+    </div>
+
+    <div class="right-section">
+        <p class="availability">Available Daily from 7am to 10pm</p>
+        <a href="contact.html" class="cta-button">GET PREPARED</a>
+    </div>
+</header>
+
+<!-- NAVIGATION BAR -->
+<nav class="navbar">
+  <ul>
+      <li><a href="index.html">HOME</a></li> <!-- Added Home Button -->
+      <li><a href="why-prepare.html">WHY PREPARE</a></li>
+      <li class="dropdown">
+          <a href="#">PREPARATION <span class="arrow">▼</span></a>
+          <ul class="dropdown-menu">
+              <li><a href="preparation-strategies.html">Preparation Strategies</a></li>
+              <li><a href="emergency-kits.html">Emergency Kits</a></li>
+              <li><a href="community-preparedness.html">Community Preparedness</a></li>
+          </ul>
+      </li>
+      <li><a href="training-workshops.html">TRAINING & WORKSHOPS</a></li>
+      <li class="dropdown">
+          <a href="#">RESOURCES <span class="arrow">▼</span></a>
+          <ul class="dropdown-menu">
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="blog.html">Blog</a></li>
+          </ul>
+      </li>
+      <li><a href="about.html">ABOUT</a></li>
+  </ul>
+</nav>
+
+    <main class="faq-container">
+        <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+        <p>Find answers to the most common questions about disaster preparedness, emergency kits, and training programs.</p>
+
+        <div class="faq-section">
+            <button class="faq-question">What is DisasterShield? <span class="arrow">▼</span></button>
+            <div class="faq-answer">
+                <p>DisasterShield is a platform that provides training, resources, and strategies to help individuals and communities prepare for emergencies.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <button class="faq-question">Why is disaster preparedness important? <span class="arrow">▼</span></button>
+            <div class="faq-answer">
+                <p>Being prepared can reduce the risk of injury, property damage, and loss of life during emergencies such as natural disasters, fires, and power outages.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <button class="faq-question">What should I include in an emergency kit? <span class="arrow">▼</span></button>
+            <div class="faq-answer">
+                <p>A basic emergency kit should include food, water, first aid supplies, a flashlight, extra batteries, important documents, and a whistle to signal for help.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <button class="faq-question">Do you offer online training programs? <span class="arrow">▼</span></button>
+            <div class="faq-answer">
+                <p>Yes! We offer virtual workshops and training sessions on topics such as CPR, first aid, and community preparedness.</p>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="faq-section">
+            <button class="faq-question">Who can benefit from your training programs? <span class="arrow">▼</span></button>
+            <div class="faq-answer">
+                <p>Our training programs are designed for individuals, families, community leaders, businesses, and schools looking to improve emergency preparedness.</p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const isOpen = answer.style.display === 'block';
+                
+                document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+                
+                answer.style.display = isOpen ? 'none' : 'block';
+            });
+        });
+    </script>
+<!-- FOOTER SECTION -->
+<footer class="footer">
+  <div class="footer-container">
+      <div class="footer-left">
+          <h2>Disaster Preparedness</h2>
+          <p>At Disaster Preparedness, we are dedicated to ensuring that individuals and communities are ready for emergencies. Our website provides essential strategies and insights for effective disaster readiness.</p>
+          <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-x-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
+
+      <div class="footer-right">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="why-prepare.html">Why Prepare</a></li>
+              <li><a href="preparation-strategies.html">Preparation Strategies</a></li>
+              <li><a href="emergency-kits.html">Emergency Kits</a></li>
+              <li><a href="community-preparedness.html">Community Preparedness</a></li>
+              <li><a href="training-workshops.html">Training and Workshops</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="about.html">About Us</a></li>
+          </ul>
+      </div>
+  </div>
+  <hr>
+  <div class="footer-bottom">
+      <p>© 2025 Disaster Preparedness, All Rights Reserved</p>
+  </div>
+</footer>
+</body>
+</html>
